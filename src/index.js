@@ -28,8 +28,6 @@ export const store = createStore(reducers,
 
 
 ReactDom.render(
-  <Provider store={store}>
-    <Router history={browserHistory} routes={routes} />
-  </Provider>, document.querySelector('.app')
+  hello, document.querySelector('.app')
 );
 
