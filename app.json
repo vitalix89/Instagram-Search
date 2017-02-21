@@ -1,0 +1,8 @@
+{
+    "name":"instagram-search",
+    "description":"app that allows users to search for pictures all over the world",
+    "repository":"https://github.com/vitalix89/Instagram-Search.git",
+    "logo":"",
+    "keywords":["instagram-search","node","express"],
+    "image":""
+}
