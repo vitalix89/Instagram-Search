@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+     "babel-cli": "^6.0.0",
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
     "babel-plugin-syntax-async-functions": "^6.13.0",
@@ -37,6 +38,7 @@
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
+     "babel-cli": "^6.0.0",
     "babel": "^6.23.0",
     "babel-eslint": "^7.1.1",
     "babel-preset-stage-1": "^6.1.18",
