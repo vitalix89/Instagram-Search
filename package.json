@@ -37,6 +37,7 @@
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
+    "babel": "^6.23.0",
     "babel-eslint": "^7.1.1",
     "babel-preset-stage-1": "^6.1.18",
     "bootstrap": "^4.0.0-alpha.6",
