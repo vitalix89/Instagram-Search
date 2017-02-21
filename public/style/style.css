@@ -1,0 +1,487 @@
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+        margin-left: 20px;
+}
+
+
+
+
+.ui.blue.segment:not(.inverted) {
+    border-top: 2px solid #2185D0;
+}
+
+.ui.segment:first-child {
+    margin-top: 0em;
+}
+
+.ui.segments .segment, .ui.segment {
+    font-size: 1rem;
+}
+
+.ui.segment {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    margin: 1rem 0em;
+    padding: 1em 1em;
+    border-radius: 0.28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+body{
+         background-image: url("../emre-karatas-194355.jpg") ; background-repeat: no-repeat; background-size: cover; 
+}
+
+
+.bold{
+
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.bubblechatsender{
+    float:right;
+  	min-width: 47px;
+	background-color: lightskyblue;
+	
+	border: 1px transparent solid;
+	padding: 2px;
+	display: block;
+	margin-top: -15px;
+	margin-right: 9px;
+	border-radius: 12px;
+	margin-left: 8px;
+	word-wrap: break-word;
+	max-width:169px;
+	margin: 32px;
+	clear:left;
+}
+
+.bubblechatreciever{
+    float:left;
+  	min-width: 47px;
+	background-color: wheat;
+	
+	border: 1px transparent solid;
+	padding: 2px;
+	display: block;
+	margin-top: -15px;
+	margin-right: 9px;
+	border-radius: 12px;
+	margin-left: 8px;
+	word-wrap: break-word;
+	max-width:169px;
+	margin: 32px;
+	clear:left;
+}
+
+.logo{
+
+    margin-left: 120px;
+}
+
+
+
+input.form-control.off{
+
+    background-color: hsla(0, 100%, 66%, 0.61)
+}
+
+.error{
+   color:red;
+   margin-left:31px;
+}
+
+
+.ui.blue.segment.off {
+      /*z-index: 1000;*/
+    background-color: lightgrey;
+    opacity: 0.6;
+    /*pointer-events: none;*/
+}
+
+.render.on {
+     
+    background-color:white;
+    
+    
+}
+
+.retry{
+    float:right;
+}
+
+
+.ui.blue.segment.on {
+      /*z-index: 1000;*/
+    background-color: lightgreen;
+    opacity: 0.6;
+    /*pointer-events: none;*/
+}
+
+.spinner.loading {
+    position:absolute;
+        border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid lightgreen; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-left:280px;
+    margin-top:-7px
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.chat{
+        position: fixed;
+    top: 741px;
+    margin:0 auto;
+    z-index: 1000;
+     
+     
+}
+
+
+
+
+
+.chatboxheader{
+   width: 274px;
+    padding: 15px;
+    margin: 0 auto;
+    height: 38px;
+    background: #025aa5;
+    /*position: absolute;*/
+    z-index: 1000;
+    left: 1020px;
+    bottom: 379px;
+    /* overflow: scroll; */
+}
+
+.closechat{
+   margin-left: 231px;
+}
+
+.username{
+   margin-left: 140px;
+       position: absolute;
+    left: -129px;
+    color:ghostwhite
+}
+
+.username2{
+   margin-left: 186px;
+       position: absolute;
+    left: -129px;
+    color:ghostwhite
+}
+
+
+
+.chatbox{
+    width: 274px;
+    padding: 15px;
+    margin: 0 auto;
+    height: 300px;
+    background: white;
+    /*position: absolute;*/
+    z-index: 1000;
+        left: 1020px;
+
+    bottom: 78px;
+    overflow:scroll;
+}
+
+.chatinput{
+    width: 274px;
+}
+
+.message.control{
+   width: 290px;
+    padding: 15px;
+    margin: 0 auto;
+    height: 300px;
+    /*//background: white;*/
+    position: absolute;
+    z-index: 1000;
+    left: 1020px;
+    bottom: -192px;
+}
+
+
+
+button.btn.btn-lg.btn-primary.btn-block.private{
+    width: 274px;
+}
+
+
+
+
+
+
+.right {
+  left:81%; /* 1% (start) + 14 (width) + 70 (main width) */
+  z-index:1000
+}
+
+
+.sidebar {
+  position:fixed; /* don't you move */
+  top:270px;
+  width:14%;
+  background:lightblue;
+  padding:5px;
+  margin:0 auto;
+}
+
+
+@media only screen and (max-width: 1600px){
+.sidebar {
+  position:fixed; 
+  top:270px;
+  width:14%;
+  background:lightblue;
+  padding:5px;
+  margin:0 auto;
+}
+    .right {
+  left:81%;
+  }
+}
+
+@media only screen and (max-width: 1500px){
+.sidebar {
+  position:fixed; 
+  top:270px;
+  width:14%;
+  background:lightblue;
+  padding:5px;
+  margin:0 auto;
+}
+    .right {
+  left:79%;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+.sidebar {
+  position:fixed; 
+  top:270px;
+  width:14%;
+  background:lightblue;
+  padding:5px;
+  margin:0 auto;
+}
+    .right {
+  left:77%;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+.sidebar {
+  position:fixed; 
+  top:270px;
+  width:14%;
+  background:lightblue;
+  padding:5px;
+  margin:0 auto;
+}
+    .right {
+  left:70%;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+.sidebar {
+  position:fixed; 
+  top:270px;
+  width:14%;
+  background:lightblue;
+  padding:5px;
+  margin:0 auto;
+}
+    .right {
+  left:68%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+.sidebar {
+  position:fixed; 
+  top:270px;
+  width:14%;
+  background:lightblue;
+  padding:5px;
+  margin:0 auto;
+}
+    .right {
+  left:66%;
+  }
+}
+
+
+.col-sm-3.pull-right {
+    overflow:scroll;
+    max-height: 139px;
+    background-color:#e7e7e7
+}
+
+
+
+.typing{
+        min-width: 47px;
+    background-color: lightskyblue;
+    border: 1px transparent solid;
+    padding: 2px;
+    /* display: block; */
+    top: 281px;
+    /* margin-right: 9px; */
+    border-radius: 12px;
+    /* margin-left: 8px; */
+    word-wrap: break-word;
+    max-width: 169px;
+    margin: 32px;
+    /* clear: left; */
+    position: absolute;
+}
+
+
+
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid rgb(251, 255, 0);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.modal.fade.show {
+        background-color: rgba(0, 0, 0, 0.41);
+}
+
+
+
+.modal-dialog {
+
+    margin-top:1px;
+}
+
+
+
+.modal-content {
+    top: 177px;
+    /*height: 527px;*/
+}
+
+
+
+
+  .body{
+      background-image: url("depositphotos_36068703-stock-photo-vintage-room-with-brick-wall.jpg")
+  }
+
+
+  a.icon:before {
+   font-family: FontAwesome;
+   content: "\f041";
+   padding-top:4px;
+ 
+   padding-right: 6px;
+   /*vertical-align:top;*/
+}
+
+
+
+
+
+@media (max-width: 768px) {
+      .instagramFa {
+              text-align: center;
+       } 
+    }
+
+    a:link {
+color: #CC0000;
+}
+a:visited {
+color: rgb(251, 255, 0)
+}
+a:hover {
+color: #FF3300;
+}
+
+
+
+
+@media (max-width: 1008px) {
+      body {
+             background-image: url('../emre-karatas-1943553.jpg');
+             background-size: cover;
+             height: 735px;
+             /*background-position: -144px 8px;*/
+
+          
+       } 
+
+
+      
+    }
+
+
+    @media (max-width: 738px) {
+      body {
+             background-image: url('../emre-karatas-1943553.jpg');
+             background-size: cover;
+             height: 735px;
+             background-position: -99px 8px;
+
+          
+       } 
+
+
+      
+    }
+
+        @media (max-width: 610px) {
+      body {
+             background-image: url('../emre-karatas-1943553.jpg');
+             background-size: cover;
+             height: 735px;
+             background-position: -143px 8px;
+
+          
+       } 
+
+
+      
+    }
+
+    
+
+
+
+
+
+
