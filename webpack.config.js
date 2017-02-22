@@ -5,10 +5,9 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
-
-    path.join('src', 'index.js')
+    './src/index.js'
   ],
-  devtool: 'eval-source-map',
+  devtool: 'source-map',
   output: {
     path: __dirname,
     publicPath: '/',
