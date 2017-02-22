@@ -5,7 +5,8 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
-    './src/index.js'
+    'webpack-hot-middleware/client?reload=true',
+    path.join(__dirname, 'src', 'index.js')
   ],
   devtool: 'source-map',
   output: {
