@@ -35,7 +35,7 @@ class Maper extends Component {
           googleMapElement={
             <GoogleMap
               defaultZoom={10}
-            // defaultCenter={this.props.coords}
+              defaultCenter={{ lat: 32, lng: 34 }}
 
               center={this.props.coords}
               options={{ streetViewControl: false, mapTypeControl: false }}
