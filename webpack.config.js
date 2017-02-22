@@ -33,10 +33,10 @@ module.exports = {
   module: {
     loaders: [{
       exclude: /node_modules/,
-      loader: 'babel',
+      loader: 'babel-loader',
       query: {
         presets: ['react', 'es2015', 'stage-2'],
-        plugins: ['transform-runtime']
+        plugins: ['transform-async-to-generator']
       }
     }]
   },
