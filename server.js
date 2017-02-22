@@ -31,10 +31,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 // const server = http.createServer(app);
 
 
-app.get('/map', (request, response) => {
-  response.sendFile(path.resolve(__dirname, 'src/components', 'Map.js'));
-});
-
 // I'm installing "nodemon", this shit restarts node when file changed automaticly ohhh nice
 // At least don't have to wait hours to recompile:0
 app.get('/test', async (request, response) => {
