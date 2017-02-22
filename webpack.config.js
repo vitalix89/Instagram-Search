@@ -8,7 +8,7 @@ module.exports = {
     'webpack-hot-middleware/client?reload=true',
     path.join(__dirname, 'src', 'index.js')
   ],
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   output: {
     path: path.join(__dirname, '/dist/'),
     publicPath: '/',
