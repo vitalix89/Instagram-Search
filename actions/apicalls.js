@@ -11,8 +11,9 @@ export const searchImages = location => async (dispatch) => {
       .get(`/test?location=${location}`)
   //   .use(jsonp)
       .end((err, response) => {
-        const images = JSON.parse(response.text);
-        console.log('res', JSON.parse(response.text));
+        console.log('res', response.text);
+        const images = response.text;
+       // console.log('res', JSON.parse(response.text));
         dispatch({ type: 'LOADING', payload: { loading: false } });
         dispatch({ type: 'HAVE_COORDS', payload: images.coords });
         dispatch({ type: 'SEARCH_IMAGES', payload: images.images });
