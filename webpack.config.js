@@ -36,7 +36,7 @@ module.exports = {
       loader: 'babel',
       query: {
         presets: ['react', 'es2015', 'stage-2'],
-        plugins: ['transform-async-to-generator']
+        plugins: ['transform-runtime']
       }
     }]
   },
