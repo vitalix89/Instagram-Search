@@ -25,9 +25,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 // if you want whole app to be available, you need webpack as well. this file should only serve api.
 // where is webpack configuration?
-app.get('*', (request, response) => {
-  response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-});
+// app.get('*', (request, response) => {
+//   response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+// });
 // const server = http.createServer(app);
 
 // I'm installing "nodemon", this shit restarts node when file changed automaticly ohhh nice
