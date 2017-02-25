@@ -7,7 +7,7 @@ module.exports = {
   entry: [
     './src/index.js'
   ],
-  devtool: 'eval',
+  devtool: 'source-map',
   output: {
     path: __dirname,
     publicPath: '/',
