@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack -p",
     "start": "babel-node server.js --presets es2015 stage-2",
-    "postinstall": "webpack -p",
+    "postinstall": "webpack",
    
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
