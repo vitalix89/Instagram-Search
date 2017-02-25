@@ -7,7 +7,7 @@
   "scripts": {
     "start": "babel-node server.js --presets es2015 stage-2",
     "postinstall": "webpack -p",
-    "build": "SET NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
+   
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
