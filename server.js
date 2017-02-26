@@ -75,9 +75,9 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(fallback('index.html', { root }));
   // you have no bundle in public directoery..its in root why?tried with public it didnt read it// what happended?
   //
-  app.get('*', (request, response) => { // run  this locally now, it supossed to work?
-      response.sendFile(path.join(__dirname, 'public/index.html'));
-    });
+  // app.get('*', (request, response) => { // run  this locally now, it supossed to work?
+  //     response.sendFile(path.join(__dirname, 'public/index.html'));
+  //   });
 
   app.get('/test', async (request, response) => {
     const location = request.query.location;
