@@ -61,22 +61,9 @@ if (process.env.NODE_ENV !== 'production') {
   }));
 } else {
   app.use(express.static('public'));
-  app.get('*', (request, response) => {
+  app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname, './public/index.html'));
   });
-
-  app.get('/location', async (request, response) => {
-      const location = request.query.location;
-
-      try {
-      const coords = await getCoordinatesFromLocation(location);
-      const images = await getImagesFromCoords(coords);
-      response.json({ images, coords });
-  //  response.json(images);
-    } catch (err) {
-      throw new Error(err);
-    }
-    });
 
 
   app.get('/test', async (request, response) => {
