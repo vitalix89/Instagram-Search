@@ -14,7 +14,7 @@ export default (
 
     <IndexRoute component={ImagesCard} />
     <Route path="map" component={Maper} />
-    <Route path="location/:locationName?" component={ImagesCard} />
+    <Route path="location/:locationName/" component={ImagesCard} />
 
   </Route>
 
