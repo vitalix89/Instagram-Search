@@ -87,6 +87,7 @@ class NavBar extends React.Component {
               </NavItem>
               <NavLink tag={Link} className="text-center" to={'/map'}><a className="icon">Map</a></NavLink>
               <NavLink tag={Link} className="text-center hidden-xs-down" to={'/'}>Home</NavLink>
+              <Link to="/map" className="lead m-r-2"><a style={{ color: 'rgb(251, 255, 0)' }}>MapMap</a></Link>
 
 
               <NavItem />
