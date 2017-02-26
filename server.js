@@ -20,7 +20,7 @@ const app = express();
 // app.use(webpackDevMiddleware);
 // app.use(require('webpack-hot-middleware')(compiler));
 
-app.use(express.static(path.join(__dirname, '/public')));
+// app.use(express.static(path.join(__dirname, '/public')));
 
 
 // if you want whole app to be available, you need webpack as well. this file should only serve api.
@@ -59,6 +59,11 @@ if (process.env.NODE_ENV !== 'production') {
     noInfo: true,
     publicPath: config.output.publicPath
   }));
+} else {
+  app.use(express.static('public'));
+  app.get('*', (request, response) => {
+    response.sendFile(path.join(__dirname, 'public/index.html'));
+  });
 }
 
 
