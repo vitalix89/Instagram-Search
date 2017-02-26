@@ -60,7 +60,7 @@ if (process.env.NODE_ENV !== 'production') {
     publicPath: config.output.publicPath
   }));
 } else {
-  app.use(express.static('/'));
+  app.use(express.static('public'));
   // app.get('*', (request, response) => {
   //   response.sendFile(path.join(__dirname, 'bundle.js'));
   // / });
