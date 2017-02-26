@@ -65,13 +65,14 @@ if (process.env.NODE_ENV !== 'production') {
   //  app.get('*', (request, response) => { // run  this locally now, it supossed to work?
   //    response.sendFile(path.join(__dirname, 'public/index.html'));
   //  });
-
+  const root = `${__dirname}/public`;
+  app.use(express.static(root));
 
   app.all('/*', (req, res) => {
     res.sendfile('index.html', { root: path.join(__dirname, 'public') });
   });
-  const root = `${__dirname}/public`;
-  app.use(express.static(root));
+
+
   app.use(fallback('index.html', { root }));
   // you have no bundle in public directoery..its in root why?tried with public it didnt read it// what happended?
   //
