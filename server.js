@@ -67,9 +67,9 @@ if (process.env.NODE_ENV !== 'production') {
   //  });
 
 
-  // app.all('/*', (req, res) => {
-  //   res.sendfile('index.html', { root: path.join(__dirname, 'public') });
-  // });
+  app.all('/*', (req, res) => {
+     res.sendfile('index.html', { root: path.join(__dirname, 'public') });
+   });
   const root = `${__dirname}/public`;
   app.use(express.static(root));
   app.use(fallback('index.html', { root }));
