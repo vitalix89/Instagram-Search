@@ -64,6 +64,20 @@ if (process.env.NODE_ENV !== 'production') {
   app.get('*', (request, response) => {
     response.sendFile(path.join(__dirname, 'public/index.html'));
   });
+
+
+  app.get('/test', async (request, response) => {
+    const location = request.query.location;
+
+    try {
+      const coords = await getCoordinatesFromLocation(location);
+      const images = await getImagesFromCoords(coords);
+      response.json({ images, coords });
+  //  response.json(images);
+    } catch (err) {
+      throw new Error(err);
+    }
+  });
 }
 
 
