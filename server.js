@@ -60,10 +60,10 @@ if (process.env.NODE_ENV !== 'production') {
     publicPath: config.output.publicPath
   }));
 } else {
-  app.use(express.static('public'));
-  app.get('*', (request, response) => {
-    response.sendFile(path.join(__dirname, 'bundle.js'));
-  });
+  app.use(express.static('/'));
+  // app.get('*', (request, response) => {
+  //   response.sendFile(path.join(__dirname, 'bundle.js'));
+  // / });
 
 
   app.get('/test', async (request, response) => {
