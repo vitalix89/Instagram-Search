@@ -44,7 +44,7 @@ class ImagesCard extends Component {
           <h3 style={{ color: 'white', textAlign: 'center' }} className="h3">
             <Link to="/location/tel-aviv" className="lead m-r-2"><a style={{ color: 'rgb(251, 255, 0)' }}>Tel Aviv - Yaffo, Israel</a></Link>
             <Link to="/location/eilat" className="lead m-r-2"><a style={{ color: 'rgb(251, 255, 0)' }}>Eilat City, Israel</a></Link>
-            <Link to="/location/big-ben-london" className="lead"><a style={{ color: 'rgb(251, 255, 0)' }}>Big Ben, London</a></Link>
+            <Link to="/location/big-ben-london/" className="lead"><a style={{ color: 'rgb(251, 255, 0)' }}>Big Ben, London</a></Link>
           </h3>
 
 
@@ -62,8 +62,8 @@ class ImagesCard extends Component {
       return (
         <div style={{ marginTop: '118px' }} className="center-block loader" />
       );
-    } 
-      return (
+    }
+    return (
         <div >
 
           { this.props.images.map((image, index) =>
@@ -83,7 +83,6 @@ class ImagesCard extends Component {
         </div>
 
       );
-    
   }
 
   render() {
