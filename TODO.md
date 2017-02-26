@@ -1,6 +1,19 @@
 # Show pictures on Google Map instead of markers 
 ## Instagram Application
 
+STOP DOING WHAT YOU DOING, AND EXPLAIN THE PROBLEM TO ME
+
+
+
+
+
+
+
+
+
+
+
+
 1. ~~Get coordinates of EACH image. (Don't forget that image coordinates can be different.) 
    Not all pictures in Tel-Aviv in the same location.~~
 
