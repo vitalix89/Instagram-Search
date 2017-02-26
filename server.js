@@ -61,15 +61,15 @@ if (process.env.NODE_ENV !== 'production') {
   }));
 } else {
   const fallback = require('express-history-api-fallback');
-  app.use(express.static('public')); // you know what this line does?expose public folder, why you don't put bundle.js inside public?i tried it didnt work now it is in root from root it worked i can try again
+ // app.use(express.static('public')); // you know what this line does?expose public folder, why you don't put bundle.js inside public?i tried it didnt work now it is in root from root it worked i can try again
   //  app.get('*', (request, response) => { // run  this locally now, it supossed to work?
   //    response.sendFile(path.join(__dirname, 'public/index.html'));
   //  });
 
 
   app.all('/*', (req, res) => {
-     res.sendfile('index.html', { root: path.join(__dirname, 'public') });
-   });
+    res.sendfile('index.html', { root: path.join(__dirname, 'public') });
+  });
   const root = `${__dirname}/public`;
   app.use(express.static(root));
   app.use(fallback('index.html', { root }));
