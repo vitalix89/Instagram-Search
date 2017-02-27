@@ -86,7 +86,7 @@ class NavBar extends React.Component {
                 </InputGroup>
               </NavItem>
               <NavLink tag={Link} className="text-center" to={'/map'}><a className="icon">Map</a></NavLink>
-              <NavLink tag={Link} className="text-center hidden-xs-down" to={'/'}>Home</NavLink>
+
 
 
               <NavItem />
