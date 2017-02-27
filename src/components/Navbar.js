@@ -55,8 +55,6 @@ class NavBar extends React.Component {
 
 
   handleKeyPress = (e) => {
-   // e.preventDefault();
-
     if (e.keyCode === 13) {
       if (!this.state.searchTerm) return;
 

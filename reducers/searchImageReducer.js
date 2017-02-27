@@ -5,7 +5,7 @@ export default (state = INITIAL_STATE, action) => {
 
     case 'SEARCH_IMAGES':
 
-      console.log('SEARCH_IMAGESSSSS', action.payload);
+
       return [...action.payload];
     default:
       return state;

@@ -26,7 +26,7 @@ class Maper extends Component {
 
 
     const mapContainer = <div style={{ height: '100%', width: '100%' }} />;
-   // const imageUrl = ('img' in this.props.selectedImage) ? this.props.selectedImage.img : null;
+
     return (
       <div style={{ height: '92%', width: '100%', position: 'absolute', top: '55px', left: '0' }}>
 
