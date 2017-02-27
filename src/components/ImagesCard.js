@@ -22,6 +22,22 @@ class ImagesCard extends Component {
   }
 
 
+  renderError() {
+    console.log(this.props.error);
+
+    if (this.props.error) {
+      return (
+        <div className="m-t-6 ">
+          <h3 style={{ color: 'white', textAlign: 'center' }} className="display-3">Network Connection Error!</h3>
+          <h3 style={{ color: 'white', textAlign: 'center' }} className="display-5">Please cheack your internet connection</h3>
+        </div>
+      );
+    }
+
+    console.log('no_error');
+  }
+
+
   renderPreview() {
     if (this.props.params.locationName && !this.props.images.length && this.state.firstSearch) {
       this.props.searchImages(this.props.params.locationName);
@@ -67,16 +83,16 @@ class ImagesCard extends Component {
       <div >
 
         { this.props.images.map((image, index) =>
-            <div key={image.id} style={{ margin: '8px' }} className="col-md-2 pull-left" onClick={() => this.btnClick(image, index)}>
-              <Card >
-                <CardImg top width="100%" src={image.images.thumbnail.url} alt="Card image cap" />
-                <CardBlock>
+          <div key={image.id} style={{ margin: '8px' }} className="col-md-2 pull-left" onClick={() => this.btnClick(image, index)}>
+            <Card >
+              <CardImg top width="100%" src={image.images.thumbnail.url} alt="Card image cap" />
+              <CardBlock>
 
-                  <CardText ><i className="fa fa-thumbs-up" aria-hidden="true" /> {image.likes.count}</CardText>
+                <CardText ><i className="fa fa-thumbs-up" aria-hidden="true" /> {image.likes.count}</CardText>
 
-                </CardBlock>
-              </Card>
-            </div>
+              </CardBlock>
+            </Card>
+          </div>
         )}
 
         <ImageModal onToggle={() => store.dispatch({ type: 'OPEN_DIALOG', payload: { openDialog: false } })} imageUrl={this.props.selectedImage.image} dialog={this.props.dialog} />
@@ -90,6 +106,8 @@ class ImagesCard extends Component {
       <div >
         {this.renderPreview()}
         {this.renderImages()}
+        {this.renderError()}
+
       </div>
     );
   }
@@ -102,6 +120,7 @@ export default connect(state => ({
   images: state.images,
   loading: state.loading,
   dialog: state.openDialog,
+  error: state.error,
   selectedImage: state.selectedImage
 }), { searchImages })(ImagesCard);
 

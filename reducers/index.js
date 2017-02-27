@@ -7,9 +7,12 @@ import LoadingReducer from './loadingReducer';
 import OpenDialogReducer from './openDialogReducer';
 import SelectedImageReducer from './selectedImageReducer';
 import LocationReducer from './locationReducer';
+import ErrorReducer from './errorReducer';
+
 
 const rootReducer = combineReducers({
   form: formReducer,
+  error: ErrorReducer,
 
   images: SearchImageReducer,
   loading: LoadingReducer,
