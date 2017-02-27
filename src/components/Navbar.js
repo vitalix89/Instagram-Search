@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-// import Body from './Body';
-
 
 import Collapse from 'reactstrap/lib/Collapse';
 import Navbar from 'reactstrap/lib/Navbar';
@@ -86,7 +84,6 @@ class NavBar extends React.Component {
                 </InputGroup>
               </NavItem>
               <NavLink tag={Link} className="text-center" to={'/map'}><a className="icon">Map</a></NavLink>
-
 
 
               <NavItem />

@@ -5,34 +5,13 @@ const express = require('express');
 
 const path = require('path');
 
-// const webpack = require('webpack');
-// const webpackConfig = require('./webpack.config.js');
-
-// const compiler = webpack(webpackConfig);
-// const webpackDevMiddleware = require('webpack-dev-middleware')(compiler, { noInfo: false, publicPath: webpackConfig.output.publicPath });
 
 const port = process.env.PORT || 8080;
 
-// const http = require('http');
+
 const app = express();
 
 
-// app.use(webpackDevMiddleware);
-// app.use(require('webpack-hot-middleware')(compiler));
-
-// app.use(express.static(path.join(__dirname, '/public')));
-
-
-// if you want whole app to be available, you need webpack as well. this file should only serve api.
-// where is webpack configuration?
-// app.get('*', (request, response) => {
-//   response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-// });
-// const server = http.createServer(app);
-
-
-// I'm installing "nodemon", this shit restarts node when file changed automaticly ohhh nice
-// At least don't have to wait hours to recompile:0
 app.get('/test', async (request, response) => {
   const location = request.query.location;
 
@@ -40,7 +19,6 @@ app.get('/test', async (request, response) => {
     const coords = await getCoordinatesFromLocation(location);
     const images = await getImagesFromCoords(coords);
     response.json({ images, coords });
-  //  response.json(images);
   } catch (err) {
     throw new Error(err);
   }
@@ -61,10 +39,7 @@ if (process.env.NODE_ENV !== 'production') {
   }));
 } else {
   const fallback = require('express-history-api-fallback');
- // app.use(express.static('public')); // you know what this line does?expose public folder, why you don't put bundle.js inside public?i tried it didnt work now it is in root from root it worked i can try again
-  //  app.get('*', (request, response) => { // run  this locally now, it supossed to work?
-  //    response.sendFile(path.join(__dirname, 'public/index.html'));
-  //  });
+
   const root = `${__dirname}/public`;
   app.use(express.static(root));
 
@@ -74,11 +49,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 
   app.use(fallback('index.html', { root }));
-  // you have no bundle in public directoery..its in root why?tried with public it didnt read it// what happended?
-  //
-  // app.get('*', (request, response) => { // run  this locally now, it supossed to work?
-  //     response.sendFile(path.join(__dirname, 'public/index.html'));
-  //   });
+
 
   app.get('/test', async (request, response) => {
     const location = request.query.location;

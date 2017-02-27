@@ -23,8 +23,6 @@ class ImagesCard extends Component {
 
 
   renderError() {
-    // console.log(this.props.error);
-
     if (this.props.error.error) {
       return (
         <div className="m-t-6 ">
@@ -33,8 +31,6 @@ class ImagesCard extends Component {
         </div>
       );
     }
-
-   // console.log('no_error');
   }
 
 
@@ -71,9 +67,6 @@ class ImagesCard extends Component {
 
 
   renderImages() {
-   // const imageUrl = ('img' in this.props.selectedImage) ? this.props.selectedImage.img : null;
-
-
     if (this.props.loading.loading) {
       return (
         <div style={{ marginTop: '118px' }} className="center-block loader" />
