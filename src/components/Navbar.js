@@ -73,7 +73,7 @@ class NavBar extends React.Component {
       <div>
         <Navbar color="faded" light toggleable>
           <NavbarToggler className="hidden-xs-down" size="sm" right onClick={this.toggle} />
-          <NavbarBrand className="instagramFa" href="/"><i className="fa fa-instagram" aria-hidden="true" /> Instagram Search</NavbarBrand>
+          <NavbarBrand className="instagramFa" href="/"><i className="fa fa-globe" aria-hidden="true" /> Global Photo Search</NavbarBrand>
 
           <Collapse isOpen="true" navbar>
             <Nav className="ml-auto" navbar>
@@ -87,7 +87,6 @@ class NavBar extends React.Component {
               </NavItem>
               <NavLink tag={Link} className="text-center" to={'/map'}><a className="icon">Map</a></NavLink>
               <NavLink tag={Link} className="text-center hidden-xs-down" to={'/'}>Home</NavLink>
-
 
 
               <NavItem />

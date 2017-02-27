@@ -25,7 +25,7 @@ class ImagesCard extends Component {
   renderError() {
     console.log(this.props.error);
 
-    if (this.props.error) {
+    if (this.props.error.error) {
       return (
         <div className="m-t-6 ">
           <h3 style={{ color: 'white', textAlign: 'center' }} className="display-3">Network Connection Error!</h3>
@@ -48,12 +48,12 @@ class ImagesCard extends Component {
     }
 
 
-    if (!this.props.images.length && this.state.firstSearch) {
+    if (!this.props.images.length && this.state.firstSearch && !this.props.error.error) {
       return (
         <div className="m-t-6" style={{ borderRadius: '45px', margin: 20, backgroundSize: 'cover' }}>
 
 
-          <h1 style={{ color: 'white', textAlign: 'center' }} className="display-3">Instagram Search</h1>
+          <h1 style={{ color: 'white', textAlign: 'center' }} className="display-3">Global Photo Search</h1>
           <h3 style={{ color: 'white', textAlign: 'center' }} className="display-5">Find photos from all over the world in one click.</h3>
           <br />
           <h1 style={{ color: 'white', textAlign: 'center' }} className="h3 m-t-0">Popular searches: </h1>

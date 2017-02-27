@@ -26,9 +26,11 @@ export const searchImages = location => async (dispatch) => {
         } else {
           const images = JSON.parse(response.text);
        // console.log('res', JSON.parse(response.text));
+
           dispatch({ type: 'LOADING', payload: { loading: false } });
           dispatch({ type: 'HAVE_COORDS', payload: images.coords });
           dispatch({ type: 'SEARCH_IMAGES', payload: images.images });
+          dispatch({ type: 'ERROR', payload: false });
        // console.log(err);
         }
       });

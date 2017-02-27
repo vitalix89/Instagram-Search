@@ -4,14 +4,16 @@
    switch (action.type) {
 
 
-    case 'ERROR':
-      console.log('ERROR', action.payload);
+     case 'ERROR':
+       console.log('ERROR', action.payload);
+
+       const error = action.payload;
 
 
-      return { ...action.payload };
+       return { error };
 
 
-    default:
-      return state;
-  }
+     default:
+       return state;
+   }
  };
