@@ -23,7 +23,7 @@ class ImagesCard extends Component {
 
 
   renderError() {
-    console.log(this.props.error);
+    // console.log(this.props.error);
 
     if (this.props.error.error) {
       return (
@@ -34,7 +34,7 @@ class ImagesCard extends Component {
       );
     }
 
-    console.log('no_error');
+   // console.log('no_error');
   }
 
 
