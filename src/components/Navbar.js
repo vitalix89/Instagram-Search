@@ -87,6 +87,9 @@ class NavBar extends React.Component {
               <NavItem />
 
 
+              <NavLink className="hidden-sm-up text-center" tag={Link} to={'/privacy'}>Privacy</NavLink>
+
+
             </Nav>
           </Collapse>
         </Navbar>
