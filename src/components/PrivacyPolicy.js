@@ -2,17 +2,17 @@ import React from 'react';
 
 
 const PrivacyPolicy = props => (
-  <div style={{ backgroundColor: 'hsl(0, 0%, 87%)' }}>
+  <div style={{ backgroundColor: 'hsl(0, 0%, 87%)', fontSize: '13px' }}>
     <div style={{ marginLeft: '13px' }} >
       <div id="ppHeader">https://globalphotosearch.herokuapp.com/ Privacy Policy</div>
       <div id="ppBody">
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div className="innerText">This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</div>
-      <span id="infoCo" /><br />
-      <div className="grayText"><strong>What personal information do we collect from the people that visit our blog, website or app?</strong></div>
-      <br />
-      <div className="innerText">We do not collect information from visitors of our site.</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div className="innerText">This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</div>
+        <span id="infoCo" /><br />
+        <div className="grayText"><strong>What personal information do we collect from the people that visit our blog, website or app?</strong></div>
+        <br />
+        <div className="innerText">We do not collect information from visitors of our site.</div>
 or other details to help you with your experience.</div>
 
       <div className="grayText"><strong>Do we use 'cookies'?</strong></div>
