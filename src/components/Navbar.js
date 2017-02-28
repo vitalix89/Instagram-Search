@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
+
 import Footer from './Footer';
 
 import Collapse from 'reactstrap/lib/Collapse';
@@ -49,6 +50,7 @@ class NavBar extends React.Component {
       alert('enter values');
     } else {
       this.props.searchImages(this.state.searchTerm);
+      browserHistory.push(`/location/${this.state.searchTerm}`);
       this.setState({ searchTerm: '' });
     }
   }
@@ -59,6 +61,7 @@ class NavBar extends React.Component {
       if (!this.state.searchTerm) return;
 
       this.props.searchImages(this.state.searchTerm);
+      browserHistory.push(`/location/${this.state.searchTerm}`);
       this.setState({ searchTerm: '' });
     }
   }

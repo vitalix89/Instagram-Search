@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const PrivacyPolicy = props => (
-  <div style={{ backgroundColor: 'hsl(0, 0%, 87%)', fontSize: '13px' }}>
+  <div style={{ backgroundColor: 'hsl(0, 0%, 87%)', fontSize: '11.5px' }}>
     <div style={{ marginLeft: '13px' }} >
       <div id="ppHeader">https://globalphotosearch.herokuapp.com/ Privacy Policy</div>
       <div id="ppBody">
