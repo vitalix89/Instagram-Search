@@ -49,7 +49,7 @@ class ImagesCard extends Component {
         <div className="m-t-6" style={{ borderRadius: '45px', margin: 20, backgroundSize: 'cover' }}>
 
 
-          <h2 style={{ color: 'white', textAlign: 'center' }} className="display-3">Global Photo Search</h2>
+          <h2 style={{ color: 'white', textAlign: 'center' }} className="hidden-sm-down display-3">Global Photo Search</h2>
           <h3 style={{ color: 'white', textAlign: 'center' }} className="display-5">Find photos from all over the world in one click.</h3>
           <br />
           <h1 style={{ color: 'white', textAlign: 'center' }} className="h3 m-t-0">Popular searches: </h1>
