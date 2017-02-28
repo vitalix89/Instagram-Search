@@ -481,7 +481,15 @@ color: #FF3300;
     
 
 
-
+.footer{
+        position: fixed;
+    /* left: 0; */
+    bottom: 0;
+    /* height: 100px; */
+    width: 100%;
+    overflow: hidden;
+    background-color:rgba(141, 98, 98, 0.62)
+}
 
 
 

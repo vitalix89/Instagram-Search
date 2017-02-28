@@ -9,7 +9,7 @@ export const searchImages = location => async (dispatch) => {
   superagent
       .get(`/test?location=${location}`)
 
-      .end((err, response) => {
+      .end((err, response) => { // tomorrow
         if (err) {
           console.log('err', err);
           setTimeout(() => {

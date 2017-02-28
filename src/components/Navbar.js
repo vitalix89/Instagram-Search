@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-
+import Footer from './Footer';
 
 import Collapse from 'reactstrap/lib/Collapse';
 import Navbar from 'reactstrap/lib/Navbar';
@@ -95,6 +95,11 @@ class NavBar extends React.Component {
 
           {this.props.children}
         </div>
+
+        <div className="footer">
+          <Footer />
+        </div>
+
 
       </div>
 
